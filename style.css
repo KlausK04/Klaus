@@ -1,0 +1,107 @@
+/* --- Global Reset & Base Styles --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* --- Table Layout --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+/* --- Cell Styling --- */
+td {
+  padding: 16px;
+  vertical-align: top;
+  border: 1px solid #ddd;
+}
+
+/* --- Header --- */
+.header {
+  text-align: center;
+  background-color: #800000;
+  color: white;
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+/* --- Navigation --- */
+.nav {
+  background-color: #f0f0f0;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  margin: 0 10px;
+}
+
+.nav a:hover {
+  color: #800000;
+}
+
+/* --- Sidebar --- */
+.sidebar strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #800000;
+}
+.sidebar ul {
+  list-style: none;
+  padding-left: 16px;
+}
+.sidebar li {
+  margin-bottom: 6px;
+}
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+.sidebar a:hover {
+  color: #800000;
+  font-weight: bold;
+}
+
+/* --- Main --- */
+.main strong {
+  font-size: 1.2em;
+  color: #800000;
+}
+
+/* --- Contact --- */
+.contact strong {
+  display: block;
+  margin-bottom: 10px;
+  color: #800000;
+}
+
+/* --- Footer --- */
+.footer {
+  background-color: #800000;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  font-size: 0.95em;
+}
+.footer a {
+  color: #ffdede;
+  text-decoration: none;
+}
+.footer a:hover {
+  color: white;
+  font-weight: bold;
+}
