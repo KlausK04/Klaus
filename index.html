@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Page Layout</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -29,9 +30,17 @@
         </td>
         <td class="contact">
             <strong>Contact Me</strong><br>
-            Name: Klaus Koziol<br>
-            Email: is0856sp@ed.ritsumei.ac.jp<br>
-            Message: 157
+            <form id="contactForm">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Submit</button>
+                <button type="reset">Clear</button>
+            </form>
+            <p id="formResponse"></p>
         </td>
     </tr>
     <tr>
