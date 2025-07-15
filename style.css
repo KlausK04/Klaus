@@ -105,3 +105,17 @@ td {
   color: white;
   font-weight: bold;
 }
+
+.image-crop {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border: 2px solid #800000; /* optional */
+}
+
+.image-crop img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-20px); /* adjust this to control what part is visible */
+}
+
