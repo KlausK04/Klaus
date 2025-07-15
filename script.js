@@ -3,17 +3,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("contactForm");
   const response = document.getElementById("formResponse");
 
-  form.addEventListener("submit", function (e) {
-    e.preventDefault();
+  if (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
 
-    response.textContent = `Thanks for your message, ${name}! I will get back to you at ${email}.`;
-    form.reset();
-  });
+      response.textContent = `Thanks for your message, ${name}! I will get back to you at ${email}.`;
+      form.reset();
+    });
+  }
+
+  const bmiButton = document.getElementById("bmiButton");
+  if (bmiButton) {
+    bmiButton.addEventListener("click", calculateBMI);
+  }
 });
+
 
 function calculateBMI() {
   const height = parseFloat(document.getElementById("height").value);
