@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website - Home</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Page Layout</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">My Awesome Website</div>
-  <div class="navbar">
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="trivia.html">Trivia</a>
-  </div>
-  <div class="container">
-    <div class="left">
-      <h3>Useful Links</h3>
-      <ul>
-        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-        <li><a href="https://w3schools.com" target="_blank">W3Schools</a></li>
-        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <h2>Welcome to My Website!</h2>
-      <p>I’m a student at Ritsumeikan University, exploring web development. I enjoy hiking, gaming, and coding. Creating this website helped me practice HTML, CSS, and JavaScript. It's been fun learning how to structure content and add interactivity. I'm excited to show you my portfolio and a fun trivia tool!</p>
-      <img src="https://via.placeholder.com/300" alt="Placeholder image">
-    </div>
-    <div class="right">
-      <h3>Contact Me</h3>
-      <form>
-        <input type="text" placeholder="Name"><br>
-        <input type="email" placeholder="Email"><br>
-        <textarea placeholder="Message"></textarea><br>
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
-      </form>
-    </div>
-  </div>
-  <div class="footer">Created July 2025 | <a href="#">My Blog</a> | <a href="#">Twitter</a></div>
+
+<table>
+    <tr>
+        <td class="header" colspan="3">Klaus Koziol | Website Exercise 4</td>
+    </tr>
+    <tr>
+        <td class="nav" colspan="3"><a href="index.html">HOME</a> | <a href="portfolio.html">PORTFOLIO</a> | <a href="trivia.html">TRIVIA</a></td>
+    </tr>
+    <tr>
+        <td class="sidebar">
+            <strong>Useful Links</strong>
+            <ul>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></li>
+                <li><a href="https://ct.ritsumei.ac.jp/ct/course_9601180" target="_blank">Manaba+r ISSE Course</a></li>
+            </ul>
+        </td>
+        <td class="main">
+            <strong>About Me</strong><br>
+            I'm Klaus Koziol, a student at Ritsumeikan University with a passion for web development, software design, and digital creativity. My hobbies include hiking, building games, and diving into new tech. This site was made as part of our Information Systems course, showcasing my progress in HTML, CSS, and JavaScript. Hope you enjoy exploring it!
+        </td>
+        <td class="contact">
+            <strong>Contact Me</strong><br>
+            Name: Klaus Koziol<br>
+            Email: is0856sp@ed.ritsumei.ac.jp<br>
+            Message: 157
+        </td>
+    </tr>
+    <tr>
+        <td class="footer" colspan="3">&copy; 2025 Klaus Koziol. All rights reserved. | <a href="mailto:is0856sp@ed.ritsumei.ac.jp">Contact Me</a></td>
+    </tr>
+</table>
+
 </body>
 </html>
